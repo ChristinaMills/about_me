@@ -1,17 +1,32 @@
+* {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
 body {
     background-color: lightblue;
     background-image: url("green_background.jpg")
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-* {
-    border: 1px solid black;
+    font-weight: normal;
 }
 
 nav {
     position: static;
+    text-align: center;
+    background-color: lightblue
+}
 
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5%;
+    margin: 2%
 }
