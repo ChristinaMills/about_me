@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+    background-image: url("green_background.jpg")
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+* {
+    border: 1px solid black;
+}
+
+nav {
+    position: static;
+
+}
