@@ -93,3 +93,4 @@ for (var i = 0; i < 6; i++) {
 }
 
 alert('Congratulations you got ' + parseInt(correctAnswers) + ' out of 7 questions correct!');
+//comment change
