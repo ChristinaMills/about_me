@@ -1,5 +1,7 @@
 //use strict statement?
-
+//TODO
+// 
+//
 
 
 alert('You are in for a treat, we are going to talk all about MEEEEE!');
@@ -7,7 +9,7 @@ var userName = prompt('What is your name, friend?');
 
 var travel = prompt('Do you think that I like to travel?').toLowerCase();
 console.log(userName + ' picked ' + travel + ' for the travel question ');
-if (travel === 'yes' | travel === 'y') {
+if (travel === 'yes' || travel === 'y') {
   alert('How did you know? Traveling is the point of life in my opinion.');
 }
 else {
@@ -51,6 +53,20 @@ else {
 }
 
 var response = prompt('Please, using the most elaborate language you posses, describe to me in detail the pleasure that you derived from this quiz');
-console.log('Homey said' + response);
+console.log('The user said' + response);
 var snarkyRetort = response.substring(0, 16);
 alert('Okay..Honestly, I was just being polite-   "' + snarkyRetort + '"   would have sufficed!' );
+
+for (var i = 0; i <= 4; i++) {
+  var yearsFrance = parseInt( prompt( 'How many years did I live in France?' ) );
+  if ( yearsFrance === 5) {
+    alert('Good job! You guessed the right number');
+    break;
+  }
+  else if ( yearsFrance <= 4 ) {
+    alert( 'Oooohhh you guessed too low, try again. You have ' + (4 - i) + ' tries left');
+  }
+  else {
+    alert( 'That\'s too high, try again. You have ' + (4 - i) + ' tries left.');
+  }
+}
