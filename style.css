@@ -13,8 +13,8 @@ body {
     background-image: url("green_background.jpg")
 }
 
-p {
-    font-weight: normal;
+div > p {
+    font-weight: bold; 
 }
 
 nav {
