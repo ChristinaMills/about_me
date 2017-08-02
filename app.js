@@ -1,8 +1,3 @@
-//use strict statement?
-//TODO
-// 
-//
-
 
 alert('You are in for a treat, we are going to talk all about MEEEEE!');
 var userName = prompt('What is your name, friend?');
@@ -70,6 +65,14 @@ for (var i = 0; i <= 4; i++) {
     alert( 'That\'s too high, try again. You have ' + (4 - i) + ' tries left.');
   }
 }
-
-var potentialAnswers = [ '']
-
+for (var i = 0; i < 6; i++) {
+  var potentialAnswers = [ 'florida', 'virginia', 'new York', 'ohio', 'texas' ];
+  userGuess = prompt( 'Can you guess a state I have visited besides Oregon?').toLowerCase();
+  if (potentialAnswers.indexOf( userGuess ) === -1) {
+    alert('Nope, I have never been there. You have ' + ( 5 - [i]) + ' tries left');
+  }
+  else {
+    alert('Yes! Correct, I visited that place!');
+    break;
+  }
+}
