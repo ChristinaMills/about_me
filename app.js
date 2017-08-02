@@ -70,3 +70,6 @@ for (var i = 0; i <= 4; i++) {
     alert( 'That\'s too high, try again. You have ' + (4 - i) + ' tries left.');
   }
 }
+
+var potentialAnswers = [ '']
+
