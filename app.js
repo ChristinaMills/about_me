@@ -5,7 +5,7 @@ var userName = prompt('What is your name, friend?');
 var travel = prompt('Do you think that I like to travel?').toLowerCase();
 console.log(userName + ' picked ' + travel + ' for the travel question ');
 if (travel === 'yes' || travel === 'y') {
-  alert('How did you know? Traveling is the point of life in my opinion.');
+  alert('How did you know? Traveling is the best!');
   correctAnswers += 1;
   console.log(correctAnswers);
 }
