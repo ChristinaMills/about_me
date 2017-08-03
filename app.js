@@ -82,15 +82,20 @@ for (var i = 0; i < 6; i++) {
   var potentialAnswers = [ 'florida', 'virginia', 'new York', 'ohio', 'texas' ];
   userGuess = prompt( 'Can you guess a state I have visited besides Oregon?').toLowerCase();
   if (potentialAnswers.indexOf( userGuess ) === -1) {
-    alert('Nope, I have never been there. You have ' + ( 5 - [i]) + ' tries left');
+    alert('Nope, I have never been there. You have ' + ( 5 - i) + ' tries left');
+    if ( i === 5 ) {
+      alert( 'All the potential answers are: Florida, Virginia, New York, Ohio, Texas');
+    }
   }
+
   else {
     alert('Yes! Correct, I visited that place!');
+    alert( 'All the potential answers are: Florida, Virginia, New York, Ohio, Texas');
     correctAnswers += 1;
     console.log(correctAnswers);
     break;
-  }
-}
+  };
+};
 
-alert('Congratulations you got ' + parseInt(correctAnswers) + ' out of 7 questions correct!');
+alert('Congratulations you got ' + parseInt(correctAnswers) + ' out of 7 questions correct ' + userName + ' !');
 //comment change
