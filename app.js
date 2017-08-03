@@ -30,27 +30,34 @@ function askVirgin() {
 };
 askVirgin();
 
-var chocolate = prompt( 'Do I like chocolate? Please answer yes or no' ).toLowerCase();
-console.log(userName + ' picked ' + chocolate + ' for the chocolate question.');
-if (chocolate === 'yes' | chocolate === 'y') {
-  alert('Very good. Of course I like chocolate!');
-  correctAnswers += 1;
-  console.log(correctAnswers);
+function askChocolate() {
+  var chocolate = prompt( 'Do I like chocolate? Please answer yes or no' ).toLowerCase();
+  console.log(userName + ' picked ' + chocolate + ' for the chocolate question.');
+  if (chocolate === 'yes' | chocolate === 'y') {
+    alert('Very good. Of course I like chocolate!');
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
+  else {
+    alert('What? seriously?! Why on earth would I not like chocolate?!');
+  };
 }
-else {
-  alert('What? seriously?! Why on earth would I not like chocolate?!');
-}
+askChocolate();
 
-var code = prompt( 'Do I like to code?').toLowerCase();
-console.log(userName + ' picked ' + code + ' for the code question.');
-if (code === 'yes' | code === 'y' ) {
-  alert('Well, that one was easy, why else would I be making this?');
-  correctAnswers += 1;
-  console.log(correctAnswers);
+function askCode() {
+  var code = prompt( 'Do I like to code?').toLowerCase();
+  console.log(userName + ' picked ' + code + ' for the code question.');
+  if (code === 'yes' | code === 'y' ) {
+    alert('Well, that one was easy, why else would I be making this?');
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
+  else {
+    alert('Whaaaa? Of course I like to code! I want to build things and have zero physical co-ordination.');
+  }
 }
-else {
-  alert('Whaaaa? Of course I like to code! I want to build things and have zero physical co-ordination.');
-}
+askCode();
+
 
 var booze = prompt( 'Do I not like beer?').toLowerCase();
 console.log(userName + ' picked ' + booze + ' for the beer question.');
