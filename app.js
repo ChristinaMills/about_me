@@ -58,17 +58,19 @@ function askCode() {
 }
 askCode();
 
-
-var booze = prompt( 'Do I not like beer?').toLowerCase();
-console.log(userName + ' picked ' + booze + ' for the beer question.');
-if (booze === 'yes' | booze === 'y') {
-  alert('Not like beer? How absurd. If class is over, I am probably having one now!');
+function askBooze() {
+  var booze = prompt( 'Do I not like beer?').toLowerCase();
+  console.log(userName + ' picked ' + booze + ' for the beer question.');
+  if (booze === 'yes' | booze === 'y') {
+    alert('Not like beer? How absurd. If class is over, I am probably having one now!');
+  }
+  else {
+    alert('Didn\'t fall for my trick huh? No, I don\'t not like beer- I LOVE it. In fact, I\'m going to have one now!');
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
 }
-else {
-  alert('Didn\'t fall for my trick huh? No, I don\'t not like beer- I LOVE it. In fact, I\'m going to have one now!');
-  correctAnswers += 1;
-  console.log(correctAnswers);
-}
+askBooze();
 
 var response = prompt('Please, using the most elaborate language you posses, describe to me in detail the pleasure that you derived from this quiz');
 console.log('The user said' + response);
