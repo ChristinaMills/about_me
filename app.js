@@ -16,16 +16,19 @@ function askTravel() {
 };
 askTravel();
 
-var virginIslands = prompt( 'Have I ever been to the Virgin Islands?').toLowerCase();
-console.log(userName + ' picked ' + virginIslands + ' for the virgin islands question.');
-if (virginIslands === 'yes' | virginIslands === 'y') {
-  alert('Haha, no way! What do I look like? A millionaire?? I\'ve been to Big Corn Island in Nicaragua though.');
-}
-else {
-  alert( 'Good one! I haven\'t been there, but hopefully one day I will visit!');
-  correctAnswers += 1;
-  console.log(correctAnswers);
-}
+function askVirgin() {
+  var virginIslands = prompt( 'Have I ever been to the Virgin Islands?').toLowerCase();
+  console.log(userName + ' picked ' + virginIslands + ' for the virgin islands question.');
+  if (virginIslands === 'yes' | virginIslands === 'y') {
+    alert('Haha, no way! What do I look like? A millionaire?? I\'ve been to Big Corn Island in Nicaragua though.');
+  }
+  else {
+    alert( 'Good one! I haven\'t been there, but hopefully one day I will visit!');
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
+};
+askVirgin();
 
 var chocolate = prompt( 'Do I like chocolate? Please answer yes or no' ).toLowerCase();
 console.log(userName + ' picked ' + chocolate + ' for the chocolate question.');
