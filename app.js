@@ -2,16 +2,19 @@ var correctAnswers = 0;
 alert('You are in for a treat, we are going to talk all about MEEEEE!');
 var userName = prompt('What is your name, friend?');
 
-var travel = prompt('Do you think that I like to travel?').toLowerCase();
-console.log(userName + ' picked ' + travel + ' for the travel question ');
-if (travel === 'yes' || travel === 'y') {
-  alert('How did you know? Traveling is the best!');
-  correctAnswers += 1;
-  console.log(correctAnswers);
-}
-else {
-  alert('Wrong. I love traveling.');
-}
+function askTravel() {
+  var travel = prompt('Do you think that I like to travel?').toLowerCase();
+  console.log (userName + ' picked ' + travel + ' for the travel question ');
+  if (travel === 'yes' || travel === 'y') {
+    alert('How did you know? Traveling is the best!');
+    correctAnswers += 1;
+    console.log(correctAnswers);
+  }
+  else {
+    alert('Wrong. I love traveling.');
+  }
+};
+askTravel();
 
 var virginIslands = prompt( 'Have I ever been to the Virgin Islands?').toLowerCase();
 console.log(userName + ' picked ' + virginIslands + ' for the virgin islands question.');
