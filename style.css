@@ -1,32 +1,90 @@
 * {
-    
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+
+header {
+    position: fixed;
+    width: 100%;
+}
+nav {
+    z-index: 0;
+    position: static;
+    text-align: center;
+    background-color: lightblue
+}
+
+#title {
+    margin-top: 100px;
+}
+nav li {
+    z-index: 500;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1.5%;
+    margin: 1%
+    text-decoration: none;
+}
 h1 {
     font-size: 40px;
     text-align: center;
 }
 
 body {
-    background-color: lightblue;
-    background-image: url("green_background.jpg")
+    /* background-color: lightblue; */
+    background-image: url("green_background.jpg");
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
-div > p {
-    font-weight: bold; 
+#bio {
+    margin: 2%;
+    padding: 5%;
 }
 
-nav {
-    position: static;
-    text-align: center;
-    background-color: lightblue
+#myface {
+    width: 30%;
+    position: inline-block;
+    float: left;
+    padding: 2%;
+}
+h2{
+    position: center;
+}
+article {
+    float: left;
+    margin: 2%;
 }
 
-nav li {
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0.5%;
-    margin: 2%
+#guatArticle {
+   margin: 2%;
+   padding: 2%; 
 }
+
+#guatPic {
+    width: 70%;
+    position: inline-block;
+    float: right;
+    padding: 5%;
+
+}
+
+#france {
+    position: inline-block;
+}
+
+#frArticle {
+   margin: 2%;
+   padding: 2%;
+}
+#parislux {
+    width: 60%;
+    position: inline-block;
+    float: left;
+    padding: 2%;
+
+}
+
