@@ -38,7 +38,8 @@ for (var i = 0; i < 4; i++) {
 
 for (var i = 0; i < 6; i++) {
   var potentialAnswers = [ 'florida', 'virginia', 'new York', 'ohio', 'texas' ];
-  userGuess = prompt( 'Can you guess a state I have visited besides Oregon?').toLowerCase();
+  var userGuess = prompt( 'Can you guess a state I have visited besides Oregon?').toLowerCase();
+
   if (potentialAnswers.indexOf( userGuess ) === -1) {
     alert('Nope, I have never been there. You have ' + ( 5 - i) + ' tries left');
     if ( i === 5 ) {
